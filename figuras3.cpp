@@ -1,5 +1,7 @@
 #include <iostream>
 #include <cstdlib>
+#include <stdio.h>
+#include <math.h>
 
 using namespace std;
 
@@ -12,6 +14,12 @@ int main()
     int radio = 0;
     int opcion;
     bool repetir = true;
+
+printf("-------------------------------------------------------------");
+printf("Programa para calcular el area de figuras geometricas      \n");
+printf("Realizado por Julian Edaurdo Rengifo Cortes                \n");
+printf("9/sep 2021. Universidad Cooperativa de Colombia            \n");
+printf("\n");
     
     
         system("cls");
