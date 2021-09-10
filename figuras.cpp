@@ -1,31 +1,33 @@
 #include<stdio.h>
-#include<string.h>
-#include<stdlib.h>
 #include<math.h>
-#include<conio.h>
+#include<iostream>
 
-main ()
+using namespace std;
+
+int main ()
 {
 	float lado, base, altura, radio, area;
 	float lado_cuadrado, area_cuadrado;
 	float area_triangulo, altura_triangulo;
-        char op;
+        float area_circulo;
+        
+        
 
-printf("Calcular area de las figuras circulo, trinagulo, cuadrado "); 
+cout << "Calcular area de las figuras circulo, trinagulo, cuadrado ";
      
-     printf("\n 1.Cuadrado:  ");
-     printf("\n 2.Triangulo:  ");
-     printf("\n 3.Circulo:   ");
-     printf("\n 6.Salir");
-     printf("\n Escoja una opcion:  ");
-     scanf("%c",&op);
+     cout << "\n 1.Cuadrado:  ";
+     cout << "\n 2.Triangulo:  ";
+     cout << "\n 3.Circulo:   ";
+     cout << "\n 6.Salir";
+     cout << "\n Escoja una opcion: ";
+     cin >> opcion;
 
 switch(op)
      {
      	case '1':
      		printf("\n Cuadrado");
      		printf("\n Ingrese el valor del lado: ");
-     		scanf("%f",&lado_cuadrado);
+     		cin"%f",&lado_cuadrado);
      		area_cuadrado=pow(lado_cuadrado,2);
      		printf("\n El area del cuadrado es:  %f",+area_cuadrado);
      		break;
