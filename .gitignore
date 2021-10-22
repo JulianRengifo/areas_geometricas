@@ -1,3 +1,5 @@
 # No se versionan archivos .out
 *.out
 
+#Exclusion Folders
+/bin

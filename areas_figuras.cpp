@@ -2,7 +2,7 @@
 #include <cstdlib>
 #include <stdio.h>
 #include <math.h>
-
+#include <cmath>
 using namespace std;
 
 int main()
@@ -13,12 +13,14 @@ int main()
     int area = 0;
     int radio = 0;
     int opcion;
+    double raiz =0;
     bool repetir = true;
 
 printf("-------------------------------------------------------------\n");
 printf("Programa para calcular el area de figuras geometricas      \n");
 printf("Realizado por Julian Edaurdo Rengifo Cortes                \n");
 printf("9/sep 2021. Universidad Cooperativa de Colombia            \n");
+printf("21/octubre 2021. Se agrega la opcion raiz cuadrada         \n");
 printf("Rename                                                     \n");
 printf("\n");
     
@@ -30,10 +32,11 @@ printf("\n");
         cout << "1. Opcion Cuadrado 1" << endl;
         cout << "2. Opcion Triangulo 2" << endl;
         cout << "3. Opcion Circulo 3" << endl;
+        cout << "4. Opcion Raiz cuadrada" <<endl;
         cout << "0. SALIR" << endl;
         
-        cout << "\n Opcion por defecto = 1 ";
-        opcion = 1;
+        cout << "\n Opcion por defecto = 4 \n";
+        opcion = 4;
         
         switch (opcion) {
             case 1:
@@ -72,11 +75,21 @@ printf("\n");
                 
                 break;
             
+            case 4:
+                double a,b;
+                cout << "ingrese un numero: ";
+                cout << "\n";
+                b= sqrt (25);
+                cout << "La raiz cuadrada de 25 es: " <<b;
+                cout << "\n";
+                break;
             case 0:
             	repetir = false;
             	break;
         }        
 
+    // Archivo funcion
+    // vf_area calcular raiz cuadrada en una variable e imprimir el resultado
 	 
     return 0;
 }
